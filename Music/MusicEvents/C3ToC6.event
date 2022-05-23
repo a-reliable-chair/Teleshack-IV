@@ -1,0 +1,86 @@
+//Event file generated from Sappy .s format.
+
+
+	#define	C3ToC6_grp  MusicVoices
+	#define	C3ToC6_pri  0
+	#define	C3ToC6_rev  0
+	#define	C3ToC6_mvl  127
+	#define	C3ToC6_key  0
+	#define	C3ToC6_tbs  1
+	#define	C3ToC6_exg  0
+	#define	C3ToC6_cmp  1
+
+	// .rodata
+	//	C3ToC6
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+C3ToC6_1:
+	BYTE		VOL     127*C3ToC6_mvl/mxv
+	BYTE	KEYSH   C3ToC6_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   120*C3ToC6_tbs/2
+	BYTE		VOICE   3
+	BYTE		N12     Cn2   v127
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+C3ToC6:
+	BYTE	1	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	C3ToC6_pri	// Priority
+	BYTE	C3ToC6_rev	// Reverb.
+
+	POIN2	C3ToC6_grp
+
+	POIN2	C3ToC6_1
+
+	
